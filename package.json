@@ -1,0 +1,33 @@
+{
+  "name": "ko-timeline",
+  "version": "0.0.1",
+  "description": "A timeline component for knockout",
+  "main": "timeline.js",
+  "scripts": {
+    "build": "browserify src/*.js --full-path=false -o ko-timeline.js",
+    "mini": "browserify src/*.js -g uglifyify --full-path=false -o ko-timeline.min.js",
+    "watch": "watchify src/*.js -o ko-timeline.js -v",
+    "start": "npm run watch",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidfarkus/ko-timeline.git"
+  },
+  "keywords": [
+    "timeline",
+    "knockout"
+  ],
+  "author": "Ron Warholic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sidfarkus/ko-timeline/issues"
+  },
+  "homepage": "https://github.com/sidfarkus/ko-timeline#readme",
+  "dependencies": {
+    "knockout": "^3.3.0"
+  },
+  "devDependencies": {
+    "uglifyify": "^2.6.0"
+  }
+}
